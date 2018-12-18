@@ -169,8 +169,7 @@ while (my $line = <PL>) {
                                 $out[1] = sprintf("%.3f", $phase_incorrect);
                         }                               
                         # print                 
-                        #print join("\t", ($primary_contig, $primary_contig_length, $haplotig_length, $n_haplotigs, $pcontig_depth, $sex_chrom
-, $dam_length, $sire_length, $phase0_length, $phase1_length)), "\t";
+                        #print join("\t", ($primary_contig, $primary_contig_length, $haplotig_length, $n_haplotigs, $pcontig_depth, $sex_chrom, $dam_length, $sire_length, $phase0_length, $phase1_length)), "\t";
                         print STDERR join("\t", ($primary_contig, $primary_contig_length, $unzipped_length, $n_haplotigs, $out[0])), "\n";
                         push(@accuracy_array, $out[0]);
                         push(@length_array, $primary_contig_length);
